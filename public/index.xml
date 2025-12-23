@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Life Is Beautiful 인생은 아름다워 美丽人生</title>
     <link>http://localhost:1313/ontology/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo -- 0.153.2</generator>
+    <description>Recent content on Life Is Beautiful 인생은 아름다워 美丽人生</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 19:16:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 20:04:31 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/ontology/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/ontology/docs/test/</link>
+      <title>101 Setup</title>
+      <link>http://localhost:1313/ontology/docs/setup/</link>
+      <pubDate>Tue, 23 Dec 2025 20:04:31 +0900</pubDate>
+      <guid>http://localhost:1313/ontology/docs/setup/</guid>
+      <description>&lt;h2 id=&#34;setup-instructions&#34;&gt;Setup Instructions&lt;a class=&#34;anchor&#34; href=&#34;#setup-instructions&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;In this document, we will guide you through the setup process for the Ontology project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;a class=&#34;anchor&#34; href=&#34;#prerequisites&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Why I Use Hugo &#43; GitHub Pages for Materials Ontology Notes</title>
+      <link>http://localhost:1313/ontology/docs/why/</link>
       <pubDate>Tue, 23 Dec 2025 19:16:30 +0900</pubDate>
-      <guid>http://localhost:1313/ontology/docs/test/</guid>
-      <description>&lt;h2 id=&#34;test-title&#34;&gt;Test title&lt;/h2&gt;
-&lt;p&gt;Test content&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ontology/docs/why/</guid>
+      <description>&lt;h1 id=&#34;why-i-use-hugo--github-pages-for-materials-ontology-notes&#34;&gt;Why I Use Hugo + GitHub Pages for Materials Ontology Notes&lt;a class=&#34;anchor&#34; href=&#34;#why-i-use-hugo--github-pages-for-materials-ontology-notes&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;I chose &lt;strong&gt;Hugo&lt;/strong&gt; and GitHub Pages because they are simple, fast, and good for technical notes.&lt;/p&gt;&#xA;&lt;p&gt;Hugo lets me write in Markdown and organize my Materials Ontology notes as clear pages. It builds a static website, so it loads quickly and does not need a server or database.&lt;/p&gt;&#xA;&lt;p&gt;GitHub Pages is free and easy to publish. Git also keeps a history of changes, so I can update tutorials safely and track what I changed over time.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

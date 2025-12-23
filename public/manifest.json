@@ -1,0 +1,15 @@
+{
+  "name": "Life Is Beautiful 인생은 아름다워 美丽人生",
+  "short_name": "Life Is Beautiful 인생은 아름다워 美丽人生",
+  "start_url": "/ontology/",
+  "scope": "/ontology/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/ontology/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
