@@ -3,3 +3,6 @@ languageCode: en-us
 title: Life Is Beautiful 인생은 아름다워 美丽人生
 theme: ["PaperMod"]
 
+taxonomies:
+  category: categories
+  tag: tags
