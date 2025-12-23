@@ -1,19 +1,18 @@
 # Contributing Guide (Markdown-only)
 
-only need to:
-1) fork this repo
-2) You might need to change `repo name` from `ZYnoe.github.io` to `YourUserName.github.io`
-3) add / edit / delete Markdown files under `content/docs`
-4) ```git add .```
-5) `git commit -m "Comment Your changes"`
+Thanks for contributing! This repo is Markdown-only—no special tooling needed.
 
-Bad Example vs Good Example
-Bad: git commit -m "changes" — Too vague; others (or future you) won't know what or why it changed.
+## Quick start
 
-Good: git commit -m "Fix login button not responding on click" — Clear, specific, uses imperative mood (like a command), explains "what" and "why".
-
-5) `git push`
-
-GitHub Actions will build and publish the site automatically.
-
-
+1. **Fork** this repository.
+2. Rename your fork if needed:
+   - From `ZYnoe.github.io`
+   - To `YourUserName.github.io`
+3. Add / edit / delete Markdown files under:
+   - `content/docs/`
+4. Stage your changes:
+   - `git add .`
+5. Commit with a meaningful message:
+   -  `git commit -m "Describe your changes"`
+6. Push to GitHub:
+   -  `git push`
