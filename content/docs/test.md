@@ -4,6 +4,6 @@ draft: false
 title: 'Test'
 ---
 
-## Test title
+## Test content
 
-Test content
+This is a test document.
