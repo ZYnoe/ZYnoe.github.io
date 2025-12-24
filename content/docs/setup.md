@@ -12,6 +12,9 @@ categories:
 
 In this document, we will guide you through the setup process for the Ontology project.
 
+### Papers to read 
+[The Artificial Intelligence Ontology: LLM-assisted](/content/papers/1.pdf)
+
 ### Prerequisites
 
 
