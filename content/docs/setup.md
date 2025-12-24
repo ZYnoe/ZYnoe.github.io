@@ -13,7 +13,9 @@ categories:
 In this document, we will guide you through the setup process for the Ontology project.
 
 ### Papers to read 
-[The Artificial Intelligence Ontology: LLM-assisted](/content/papers/1.pdf)
+
+PDFs are available at:
+[The Artificial Intelligence Ontology: LLM-assisted](https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/1.pdf)
 
 ### Prerequisites
 

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My New Hugo Site</title>
+    <title>Categories on Life Is Beautiful 인생은 아름다워 美丽人生</title>
     <link>http://localhost:1313/ontology/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
-    <generator>Hugo -- 0.153.2</generator>
+    <description>Recent content in Categories on Life Is Beautiful 인생은 아름다워 美丽人生</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
+    <copyright>[© CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en)</copyright>
+    <lastBuildDate>Tue, 23 Dec 2025 20:04:31 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/ontology/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical</title>
+      <link>http://localhost:1313/ontology/categories/technical/</link>
+      <pubDate>Tue, 23 Dec 2025 20:04:31 +0900</pubDate>
+      <guid>http://localhost:1313/ontology/categories/technical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Non-Technical</title>
+      <link>http://localhost:1313/ontology/categories/non-technical/</link>
+      <pubDate>Tue, 23 Dec 2025 19:16:30 +0900</pubDate>
+      <guid>http://localhost:1313/ontology/categories/non-technical/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
