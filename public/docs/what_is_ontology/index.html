@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/ontology/livereload.js?mindelay=10&amp;v=2&amp;port=56078&amp;path=ontology/livereload" data-no-instant defer></script>
+<head><script src="/ontology/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ontology/livereload" data-no-instant defer></script>
   <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -14,7 +14,7 @@ Correspondence to the papers# Turning unstructured data or fragmented resources 
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:56078/ontology/docs/what_is_ontology/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/ontology/docs/what_is_ontology/">
   <meta property="og:site_name" content="Life Is Beautiful 인생은 아름다워 美丽人生">
   <meta property="og:title" content="What is Ontology">
   <meta property="og:description" content="What is Ontology? (my understanding)# How can structured concepts and relationships be distilled from unstructured data or fragmented resources to enable interoperability and retrieval?
@@ -34,18 +34,18 @@ Ontology’s value proposition is that it turns fragmented/unstructured informat
 Correspondence to the papers# Turning unstructured data or fragmented resources into structured concepts and relationships corresponds to the ontology learning / ontology construction workflow (term extraction, term typing, taxonomy construction, relation extraction, and axiom discovery), whose goal is to transform text and similar inputs into computable concepts, hierarchies, and relations 3.">
   <meta itemprop="datePublished" content="2025-12-28T22:07:33+09:00">
   <meta itemprop="dateModified" content="2025-12-28T22:07:33+09:00">
-  <meta itemprop="wordCount" content="243">
+  <meta itemprop="wordCount" content="698">
   <meta itemprop="keywords" content="Ontology Tutorial">
 
 <title>What is Ontology | Life Is Beautiful 인생은 아름다워 美丽人生</title>
 <link rel="icon" href="/ontology/favicon.png" >
 <link rel="manifest" href="/ontology/manifest.json">
-<link rel="canonical" href="http://localhost:56078/ontology/docs/what_is_ontology/">
+<link rel="canonical" href="http://localhost:1313/ontology/docs/what_is_ontology/">
 <link rel="stylesheet" href="/ontology/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
 
 
   <script defer src="/ontology/fuse.min.js"></script>
-  <script defer src="/ontology/en.search.min.1973a95b356b408f350fbed74a85db02a4bb739d547b56e319f891db2c4c629a.js" integrity="sha256-GXOpWzVrQI81D77XSoXbAqS7c51Ue1bjGfiR2yxMYpo=" crossorigin="anonymous"></script>
+  <script defer src="/ontology/en.search.min.04e9eaa86c6cbf5136531cea87cc6de3abd4b8dac419ef30427336abba1d343d.js" integrity="sha256-BOnqqGxsv1E2Uxzqh8xt46vUuNrEGe8wQnM2q7odND0=" crossorigin="anonymous"></script>
 
 
 
@@ -185,6 +185,15 @@ Correspondence to the papers# Turning unstructured data or fragmented resources 
 <nav id="TableOfContents">
   <ul>
     <li><a href="#correspondence-to-the-papers">Correspondence to the papers</a></li>
+    <li><a href="#engineering-approach-of-ontology">Engineering approach of Ontology</a>
+      <ul>
+        <li><a href="#upper-ontology-alignment--modular-ontology-i-need-to-revise-it-because-im-still-confused">Upper-ontology alignment + modular ontology (I need to revise it because I’m still confused)</a></li>
+        <li><a href="#schema-first--api-first">Schema-first / API-first</a></li>
+        <li><a href="#process-structure-property-psp">Process-structure-property (PSP)</a></li>
+        <li><a href="#lightweight-ontology">lightweight ontology</a></li>
+        <li><a href="#semi-automated--automated-ontology-engineering-text-mining-topic-modeling-llm-assisted">Semi-automated / automated ontology engineering (text mining, topic modeling, LLM-assisted).</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -215,7 +224,27 @@ Correspondence to the papers# Turning unstructured data or fragmented resources 
 <p>For example, work in the materials domain explicitly positions an ontology as a shared, extensible model for data exchange, reuse, and integration, and as a semantic mapping layer that resolves mismatches in terminology and structure across heterogeneous databases <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/4.pdf">4</a>.</p>
 </li>
 </ul>
-<h1 id="engineering-approach-of-ontology">Engineering approach of Ontology<a class="anchor" href="#engineering-approach-of-ontology">#</a></h1>
+<h2 id="engineering-approach-of-ontology">Engineering approach of Ontology<a class="anchor" href="#engineering-approach-of-ontology">#</a></h2>
+<p>Computational materials ontology engineering approaches are usually not about a single “uniquely correct method.” Instead, an approach is chosen around the target use cases (competency questions), the form of the data sources (computational workflows/databases/literature), and interoperability requirements. Below is a practical summary of the most common engineering routes (each corresponding to typical representative works/frameworks) <a href="https://journals.sagepub.com/doi/full/10.3233/SW-233340">(Aameri et al., 2023).</a></p>
+<h3 id="upper-ontology-alignment--modular-ontology-i-need-to-revise-it-because-im-still-confused"><a href="https://www.nature.com/articles/s41597-025-04938-5">Upper-ontology alignment + modular ontology</a> (I need to revise it because I’m still confused)<a class="anchor" href="#upper-ontology-alignment--modular-ontology-i-need-to-revise-it-because-im-still-confused">#</a></h3>
+<p>The paper outlines simple, practical methods for MDS-Onto to align with upper ontologies and build modular ontologies. These approaches make the ontology flexible and compatible with broader standards.
+​</p>
+<h4 id="upper-ontology-alignment">Upper Ontology Alignment<a class="anchor" href="#upper-ontology-alignment">#</a></h4>
+<p>MDS-Onto, a domain-specific ontology, connects to top-level ontologies like BFO (Basic Formal Ontology) using mid-level bridges such as PMDco and PROV-O. The steps involve mapping core terms (e.g., &ldquo;material&rdquo; or &ldquo;process&rdquo;) to BFO&rsquo;s basic categories (e.g., &ldquo;continuant&rdquo; for enduring things and &ldquo;occurrent&rdquo; for events), linking materials science concepts via PMDco for semantic sharing, and adding Schema.org plus PROV-O for web compatibility and early term conflict resolution.</p>
+<h4 id="modular-ontology-design">Modular Ontology Design<a class="anchor" href="#modular-ontology-design">#</a></h4>
+<p>MDS-Onto uses a layered setup with a top core module for shared terms and subdomain modules (e.g., X-ray or photovoltaics). Subdomains reuse top terms and add specifics (like &ldquo;bandgap&rdquo; for photovoltaics), keeping changes isolated; tools like FAIRmaterials help experts build and merge interoperable modules without direct dependencies, ensuring easy updates and consistency.</p>
+<h3 id="schema-first--api-first"><a href="https://link.springer.com/chapter/10.1007/978-3-030-62466-8_14">Schema-first / API-first</a><a class="anchor" href="#schema-first--api-first">#</a></h3>
+<p>Schema-first is an ontology development approach in which you first define a data schema (e.g., OPTIMADE’s standardized field definitions) and then build the ontology’s concepts and relations on top of that schema, ensuring the ontology stays aligned with existing database structures.</p>
+<p>Think of it like building a house: a data-first approach is like piling up materials and only then trying to design the blueprint—things can end up unstable. A schema-first approach draws the blueprint (the schema) first and then builds accordingly, so data from different databases can connect seamlessly.</p>
+<p>In the paper’s development of the Materials Design Ontology (MDO), the authors follow the NeOn methodology scenario of “reusing non-ontological resources” by extracting terms from the OPTIMADE schema (a consensus data model). These terms guide the definition of concepts such as “structure,” “calculation,” and “property,” avoiding the need to start from messy raw data.</p>
+<p>As a result, MDO can map data from resources like the Materials Project into RDF and support SPARQL queries (e.g., finding materials with a band gap &gt; 5 eV), enabling interoperability across heterogeneous databases and aligning with the FAIR principles</p>
+<h3 id="process-structure-property-psp"><a href="https://arxiv.org/pdf/2211.10407">Process-structure-property (PSP)</a><a class="anchor" href="#process-structure-property-psp">#</a></h3>
+<p>This paragraph is intentionally left blank</p>
+<h3 id="lightweight-ontology"><a href="https://arxiv.org/pdf/2412.17877">lightweight ontology</a><a class="anchor" href="#lightweight-ontology">#</a></h3>
+<p>This paragraph is intentionally left blank</p>
+<h3 id="semi-automated--automated-ontology-engineering-text-mining-topic-modeling-llm-assisted">Semi-automated / automated ontology engineering (text mining, topic modeling, LLM-assisted).<a class="anchor" href="#semi-automated--automated-ontology-engineering-text-mining-topic-modeling-llm-assisted">#</a></h3>
+<p><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2025.1676477/full">LLM-supported collaborative ontology design for data and knowledge management platforms</a></p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-030-71903-6_28">HIVE-4-MAT: Advancing the Ontology Infrastructure for Materials Science</a></p>
 </article>
  
       
@@ -293,6 +322,15 @@ Correspondence to the papers# Turning unstructured data or fragmented resources 
 <nav id="TableOfContents">
   <ul>
     <li><a href="#correspondence-to-the-papers">Correspondence to the papers</a></li>
+    <li><a href="#engineering-approach-of-ontology">Engineering approach of Ontology</a>
+      <ul>
+        <li><a href="#upper-ontology-alignment--modular-ontology-i-need-to-revise-it-because-im-still-confused">Upper-ontology alignment + modular ontology (I need to revise it because I’m still confused)</a></li>
+        <li><a href="#schema-first--api-first">Schema-first / API-first</a></li>
+        <li><a href="#process-structure-property-psp">Process-structure-property (PSP)</a></li>
+        <li><a href="#lightweight-ontology">lightweight ontology</a></li>
+        <li><a href="#semi-automated--automated-ontology-engineering-text-mining-topic-modeling-llm-assisted">Semi-automated / automated ontology engineering (text mining, topic modeling, LLM-assisted).</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

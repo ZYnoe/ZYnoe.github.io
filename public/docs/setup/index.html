@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/ontology/livereload.js?mindelay=10&amp;v=2&amp;port=56078&amp;path=ontology/livereload" data-no-instant defer></script>
+<head><script src="/ontology/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ontology/livereload" data-no-instant defer></script>
   <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -13,7 +13,7 @@ Papers to read# PDFs are available at: The Artificial Intelligence Ontology: LLM
 Prerequisites# %pip install --upgrade pip %pip install pandas %pip install requests %pip install bs4import requests url_nmat = &#34;https://www.nature.com/articles/s41563-023-01620-2&#34; response = requests.get(url_nmat)print(response) response.status_code html = response.textfrom bs4 import BeautifulSoup soup = BeautifulSoup(html, &#34;html.parser&#34;) abstract = soup.select_one(&#34;#Abs1-content &gt; p&#34;)abstractabstract.get_text()def get_abstract(url): response = requests.get(&#34;https://www.nature.com&#34;&#43;url) print(f&#34;Reading abstracts from {url}...&#34;) if response.status_code == 200: html = response.text soup = BeautifulSoup(html, &#39;html.parser&#39;) print(&#34;Success&#34;) return soup.select_one(&#39;#Abs1-content &gt; p&#39;).get_text() else: print(f&#34;Error : {response.status_code}&#34;) return -1urls_nmat = [&#34;/articles/s41563-023-01517-0&#34;, &#34;/articles/s41563-023-01572-7&#34;, &#34;/articles/s41563-023-01562-9&#34;, &#34;/articles/s41563-023-01580-7&#34;, &#34;/articles/s41563-023-01550-z&#34;, &#34;/articles/s41563-023-01585-2&#34;, &#34;/articles/s41563-023-01595-0&#34;, &#34;/articles/s41563-023-01560-x&#34;, &#34;/articles/s41563-023-01591-4&#34;, &#34;/articles/s41563-023-01598-x&#34;, &#34;/articles/s41563-023-01584-3&#34;, &#34;/articles/s41563-023-01577-2&#34;]abstracts = [ get_abstract(abstract) for abstract in urls_nmat ]abstractsimport pandas as pd df = pd.DataFrame({ &#34;url&#34;:urls_nmat, &#34;abstract&#34;:abstracts }) df.to_csv(&#34;extracted_abstracts.csv&#34;, index=False)">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:56078/ontology/docs/setup/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/ontology/docs/setup/">
   <meta property="og:site_name" content="Life Is Beautiful 인생은 아름다워 美丽人生">
   <meta property="og:title" content="101 Setup">
   <meta property="og:description" content="Setup Instructions# In this document, we will guide you through the setup process for the Ontology project.
@@ -39,12 +39,12 @@ Prerequisites# %pip install --upgrade pip %pip install pandas %pip install reque
 <title>101 Setup | Life Is Beautiful 인생은 아름다워 美丽人生</title>
 <link rel="icon" href="/ontology/favicon.png" >
 <link rel="manifest" href="/ontology/manifest.json">
-<link rel="canonical" href="http://localhost:56078/ontology/docs/setup/">
+<link rel="canonical" href="http://localhost:1313/ontology/docs/setup/">
 <link rel="stylesheet" href="/ontology/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
 
 
   <script defer src="/ontology/fuse.min.js"></script>
-  <script defer src="/ontology/en.search.min.1973a95b356b408f350fbed74a85db02a4bb739d547b56e319f891db2c4c629a.js" integrity="sha256-GXOpWzVrQI81D77XSoXbAqS7c51Ue1bjGfiR2yxMYpo=" crossorigin="anonymous"></script>
+  <script defer src="/ontology/en.search.min.04e9eaa86c6cbf5136531cea87cc6de3abd4b8dac419ef30427336abba1d343d.js" integrity="sha256-BOnqqGxsv1E2Uxzqh8xt46vUuNrEGe8wQnM2q7odND0=" crossorigin="anonymous"></script>
 
 
 
