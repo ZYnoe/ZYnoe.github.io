@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/ontology/livereload.js?mindelay=10&amp;v=2&amp;port=56078&amp;path=ontology/livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What is Ontology? (my understanding)# How can structured concepts and relationships be distilled from unstructured data or fragmented resources to enable interoperability and retrieval?
+Ontology’s value proposition is that it turns fragmented/unstructured information into interoperable and searchable structured knowledge, typically by serving as the shared semantic “schema” for data integration and querying across systems.
+Correspondence to the papers# Turning unstructured data or fragmented resources into structured concepts and relationships corresponds to the ontology learning / ontology construction workflow (term extraction, term typing, taxonomy construction, relation extraction, and axiom discovery), whose goal is to transform text and similar inputs into computable concepts, hierarchies, and relations 3.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:56078/ontology/docs/what_is_ontology/">
+  <meta property="og:site_name" content="Life Is Beautiful 인생은 아름다워 美丽人生">
+  <meta property="og:title" content="What is Ontology">
+  <meta property="og:description" content="What is Ontology? (my understanding)# How can structured concepts and relationships be distilled from unstructured data or fragmented resources to enable interoperability and retrieval?
+Ontology’s value proposition is that it turns fragmented/unstructured information into interoperable and searchable structured knowledge, typically by serving as the shared semantic “schema” for data integration and querying across systems.
+Correspondence to the papers# Turning unstructured data or fragmented resources into structured concepts and relationships corresponds to the ontology learning / ontology construction workflow (term extraction, term typing, taxonomy construction, relation extraction, and axiom discovery), whose goal is to transform text and similar inputs into computable concepts, hierarchies, and relations 3.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-12-28T22:07:33+09:00">
+    <meta property="article:modified_time" content="2025-12-28T22:07:33+09:00">
+    <meta property="article:tag" content="Ontology Tutorial">
+
+
+  <meta itemprop="name" content="What is Ontology">
+  <meta itemprop="description" content="What is Ontology? (my understanding)# How can structured concepts and relationships be distilled from unstructured data or fragmented resources to enable interoperability and retrieval?
+Ontology’s value proposition is that it turns fragmented/unstructured information into interoperable and searchable structured knowledge, typically by serving as the shared semantic “schema” for data integration and querying across systems.
+Correspondence to the papers# Turning unstructured data or fragmented resources into structured concepts and relationships corresponds to the ontology learning / ontology construction workflow (term extraction, term typing, taxonomy construction, relation extraction, and axiom discovery), whose goal is to transform text and similar inputs into computable concepts, hierarchies, and relations 3.">
+  <meta itemprop="datePublished" content="2025-12-28T22:07:33+09:00">
+  <meta itemprop="dateModified" content="2025-12-28T22:07:33+09:00">
+  <meta itemprop="wordCount" content="243">
+  <meta itemprop="keywords" content="Ontology Tutorial">
+
+<title>What is Ontology | Life Is Beautiful 인생은 아름다워 美丽人生</title>
+<link rel="icon" href="/ontology/favicon.png" >
+<link rel="manifest" href="/ontology/manifest.json">
+<link rel="canonical" href="http://localhost:56078/ontology/docs/what_is_ontology/">
+<link rel="stylesheet" href="/ontology/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/ontology/fuse.min.js"></script>
+  <script defer src="/ontology/en.search.min.1973a95b356b408f350fbed74a85db02a4bb739d547b56e319f891db2c4c629a.js" integrity="sha256-GXOpWzVrQI81D77XSoXbAqS7c51Ue1bjGfiR2yxMYpo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/ontology/"><span>Life Is Beautiful 인생은 아름다워 美丽人生</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/what_is_ontology/" class="active">
+      What is Ontology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/setup/" class="">
+      101 Setup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/why/" class="">
+      Why I Use Hugo &#43; GitHub Pages for Materials Ontology Notes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/ontology/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>What is Ontology</h3>
+
+  <label for="toc-control">
+    
+    <img src="/ontology/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#correspondence-to-the-papers">Correspondence to the papers</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="what-is-ontology-my-understanding">What is Ontology? (my understanding)<a class="anchor" href="#what-is-ontology-my-understanding">#</a></h1>
+<p>How can structured concepts and relationships be distilled from unstructured data or fragmented resources to enable interoperability and retrieval?</p>
+<p>Ontology’s value proposition is that it turns fragmented/unstructured information into interoperable and searchable structured knowledge, typically by serving as the shared semantic “schema” for data integration and querying across systems.</p>
+<h2 id="correspondence-to-the-papers">Correspondence to the papers<a class="anchor" href="#correspondence-to-the-papers">#</a></h2>
+<ul>
+<li>
+<p>Turning unstructured data or fragmented resources into structured concepts and relationships corresponds to the ontology learning / ontology construction workflow (term extraction, term typing, taxonomy construction, relation extraction, and axiom discovery), whose goal is to transform text and similar inputs into computable concepts, hierarchies, and relations <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/3.pdf">3</a>.</p>
+</li>
+<li>
+<p>Ontologies are often described as a semantic layer that standardizes domain concepts and the relations among them, so different databases/tools/formats can “mean the same thing” even if they store data differently, which enables semantic interoperability and supports cross-source retrieval, integration, and reasoning <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/4.pdf">4</a> <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/5.pdf">5</a> <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/6.pdf">6</a>.</p>
+</li>
+<li>
+<p>An ontology is not only about “distilling structure from unstructured data”; it is a reusable semantic framework that formally captures a domain’s meaning. It uses classes, properties, and relations to provide machine-actionable definitions in formal languages such as RDF and OWL, thereby enabling automated reasoning and consistency checking <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/4.pdf">4</a> <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/5.pdf">5</a>.</p>
+</li>
+<li>
+<p>For example, work in the materials domain explicitly positions an ontology as a shared, extensible model for data exchange, reuse, and integration, and as a semantic mapping layer that resolves mismatches in terminology and structure across heterogeneous databases <a href="https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/papers/4.pdf">4</a>.</p>
+</li>
+</ul>
+<h1 id="engineering-approach-of-ontology">Engineering approach of Ontology<a class="anchor" href="#engineering-approach-of-ontology">#</a></h1>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+    </span>
+    <span>
+    
+      <a href="/ontology/docs/setup/" class="flex align-center">
+        <span>101 Setup</span>
+        <img src="/ontology/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>Life Is Beautiful 인생은 아름다워 美丽人生 - <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en">© CC BY-NC 4.0</a></small>
+  </div>
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#correspondence-to-the-papers">Correspondence to the papers</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

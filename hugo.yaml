@@ -1,7 +1,7 @@
 baseURL: "https://ZYnoe.github.io/ontology/"
 languageCode: en-us
 title: Life Is Beautiful 인생은 아름다워 美丽人生
-theme: ["hugo-book"]
+theme: hugo-book
 
 taxonomies:
   category: categories
