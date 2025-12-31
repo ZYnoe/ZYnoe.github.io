@@ -20,6 +20,8 @@ categories:
 
 I have implemented the Python script `fetch_abstracts.py` to download abstracts from Elsevier Science Direct. It is designed to handle API Rate Limits (Error 429) automatically.
 
+[The source code can be found here](https://github.com/ZYnoe/ZYnoe.github.io/blob/main/content/codes/fetch_abstracts.py)
+
 ## Prerequisites
 
 You need your **Elsevier API Key**. An **Institutional Token** is recommended for higher rate limits but optional.
