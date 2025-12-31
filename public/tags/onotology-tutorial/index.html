@@ -19,8 +19,8 @@ https://github.com/alex-shpak/hugo-book
 
 
   <meta itemprop="name" content="Onotology Tutorial">
-  <meta itemprop="datePublished" content="2025-12-23T20:04:31+09:00">
-  <meta itemprop="dateModified" content="2025-12-23T20:04:31+09:00">
+  <meta itemprop="datePublished" content="2025-12-26T11:20:00+09:00">
+  <meta itemprop="dateModified" content="2025-12-26T11:20:00+09:00">
 
 <title>Onotology Tutorial | Life Is Beautiful 인생은 아름다워 美丽人生</title>
 <link rel="icon" href="/ontology/favicon.png" >
@@ -30,7 +30,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <script defer src="/ontology/fuse.min.js"></script>
-  <script defer src="/ontology/en.search.min.61f355d783cbea151002b4d70788de33266efdfb7c9def19d18f5c45506d63e5.js" integrity="sha256-YfNV14PL6hUQArTXB4jeMyZu/ft8ne8Z0Y9cRVBtY&#43;U=" crossorigin="anonymous"></script>
+  <script defer src="/ontology/en.search.min.fa9d41ad1a5292ccf9c5992516e8d746da445c2f5ee516e496c0dd7883a472a8.js" integrity="sha256-&#43;p1BrRpSksz5xZklFujXRtpEXC9e5RbklsDdeIOkcqg=" crossorigin="anonymous"></script>
 
 
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/ontology/tags/onotology-tutorial/index.xml" title="Life Is Beautiful 인생은 아름다워 美丽人生" />
@@ -78,13 +78,57 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+    
+      
         <li>
           
   
   
 
   
-    <a href="/ontology/docs/setup/" class="">
+    <a href="/ontology/docs/fetch_abstracts_documentation/" class="">
+      Elsevier Abstract Downloader</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/what_is_ontology/" class="">
+      What is Ontology</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/tools/" class="">
+      Ontology packages and softwares</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/ontology/docs/text_extraction/" class="">
       101 Setup</a>
   
 
@@ -157,15 +201,22 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/ontology/docs/setup/">101 Setup</a>
+      <a href="/ontology/docs/tools/">Ontology packages and softwares</a>
     </h2>
     
   <div class="flex align-center text-small book-post-date">
     <img src="/ontology/icons/calendar.svg" class="book-icon" alt="Calendar" />
-    <span>December 23, 2025</span>
+    <span>December 26, 2025</span>
   </div>
 
 
+
+  
+  <div class="text-small">
+    
+      <a href="/ontology/categories/technical/">Technical</a>
+  </div>
+  
 
   
   <div class="text-small">
@@ -175,73 +226,36 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-    <div class="book-post-content"><h2 id="setup-instructions">Setup Instructions<a class="anchor" href="#setup-instructions">#</a></h2>
-<p>In this document, we will guide you through the setup process for the Ontology project.</p>
-<h3 id="prerequisites">Prerequisites<a class="anchor" href="#prerequisites">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">%</span>pip install <span style="color:#f92672">--</span>upgrade pip
-</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>pip install pandas
-</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>pip install requests
-</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>pip install bs4</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
-</span></span><span style="display:flex;"><span>url_nmat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.nature.com/articles/s41563-023-01620-2&#34;</span>
-</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url_nmat)</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(response)
-</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>status_code
-</span></span><span style="display:flex;"><span>html <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>text</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
-</span></span><span style="display:flex;"><span>soup <span style="color:#f92672">=</span> BeautifulSoup(html, <span style="color:#e6db74">&#34;html.parser&#34;</span>)
-</span></span><span style="display:flex;"><span>abstract <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>select_one(<span style="color:#e6db74">&#34;#Abs1-content &gt; p&#34;</span>)</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abstract</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abstract<span style="color:#f92672">.</span>get_text()</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_abstract</span>(url):
-</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;https://www.nature.com&#34;</span><span style="color:#f92672">+</span>url)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Reading abstracts from </span><span style="color:#e6db74">{</span>url<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
-</span></span><span style="display:flex;"><span>        html <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>text
-</span></span><span style="display:flex;"><span>        soup <span style="color:#f92672">=</span> BeautifulSoup(html, <span style="color:#e6db74">&#39;html.parser&#39;</span>)
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Success&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> soup<span style="color:#f92672">.</span>select_one(<span style="color:#e6db74">&#39;#Abs1-content &gt; p&#39;</span>)<span style="color:#f92672">.</span>get_text()
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error : </span><span style="color:#e6db74">{</span>response<span style="color:#f92672">.</span>status_code<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>urls_nmat  <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;/articles/s41563-023-01517-0&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01572-7&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01562-9&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01580-7&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01550-z&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01585-2&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01595-0&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01560-x&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01591-4&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01598-x&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01584-3&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;/articles/s41563-023-01577-2&#34;</span>]</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abstracts <span style="color:#f92672">=</span> [ get_abstract(abstract) <span style="color:#66d9ef">for</span> abstract <span style="color:#f92672">in</span> urls_nmat ]</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abstracts</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;url&#34;</span>:urls_nmat,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;abstract&#34;</span>:abstracts
-</span></span><span style="display:flex;"><span>})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#34;extracted_abstracts.csv&#34;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)</span></span></code></pre></div></div>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/ontology/docs/why/">Why I Use Hugo &#43; GitHub Pages for Materials Ontology Notes</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/ontology/icons/calendar.svg" class="book-icon" alt="Calendar" />
-    <span>December 23, 2025</span>
-  </div>
-
-
-
-  
-  <div class="text-small">
-    
-      <a href="/ontology/tags/onotology-tutorial/">Onotology Tutorial</a>
-  </div>
-  
-
-
-    <div class="book-post-content"><h1 id="why-i-use-hugo--github-pages-for-materials-ontology-notes">Why I Use Hugo + GitHub Pages for Materials Ontology Notes<a class="anchor" href="#why-i-use-hugo--github-pages-for-materials-ontology-notes">#</a></h1>
-<p>I chose <strong>Hugo</strong> and GitHub Pages because they are simple, fast, and good for technical notes.</p>
-<p>Hugo lets me write in Markdown and organize my Materials Ontology notes as clear pages. It builds a static website, so it loads quickly and does not need a server or database.</p>
-<p>GitHub Pages is free and easy to publish. Git also keeps a history of changes, so I can update tutorials safely and track what I changed over time.</p></div>
+    <div class="book-post-content"><h1 id="data">Data<a class="anchor" href="#data">#</a></h1>
+<p><a href="https://raw.githubusercontent.com/M3RG-IITD/MatSciBERT/refs/heads/main/pretraining/piis_dois.csv">https://raw.githubusercontent.com/M3RG-IITD/MatSciBERT/refs/heads/main/pretraining/piis_dois.csv</a></p>
+<h2 id="domain-ontologies-ontology-datasets">Domain Ontologies (Ontology Datasets)<a class="anchor" href="#domain-ontologies-ontology-datasets">#</a></h2>
+<p><a href="https://github.com/emmo-repo/domain-crystallography">https://github.com/emmo-repo/domain-crystallography</a>
+<a href="https://github.com/BIG-MAP/BattINFO">https://github.com/BIG-MAP/BattINFO</a></p>
+<h1 id="emmo">EMMO<a class="anchor" href="#emmo">#</a></h1>
+<p><a href="https://emmc.eu/emmo/">https://emmc.eu/emmo/</a></p>
+<h1 id="softwares">Softwares<a class="anchor" href="#softwares">#</a></h1>
+<table>
+  <thead>
+      <tr>
+          <th>Names</th>
+          <th>URL</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Protégé</td>
+          <td><a href="https://protege.stanford.edu/software.php">https://protege.stanford.edu/software.php</a></td>
+      </tr>
+      <tr>
+          <td>LBNLP</td>
+          <td><a href="https://lbnlp.github.io/lbnlp/">https://lbnlp.github.io/lbnlp/</a></td>
+      </tr>
+      <tr>
+          <td>owlready2</td>
+          <td><a href="https://pypi.org/project/owlready2/">https://pypi.org/project/owlready2/</a></td>
+      </tr>
+  </tbody>
+</table></div>
   </article>
   
 
@@ -304,12 +318,36 @@ https://github.com/alex-shpak/hugo-book
   
     
     <li class="book-section-flat">
+      <a>Categories</a>
+      <ul>
+      
+        <li class="flex align-center">
+          <a href="/ontology/categories/technical/">Technical</a>
+          <span>4</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/ontology/categories/non-technical/">Non-Technical</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
       <a>Tags</a>
       <ul>
       
         <li class="flex align-center">
+          <a href="/ontology/tags/ontology-tutorial/">Ontology Tutorial</a>
+          <span>4</span>
+        </li>
+      
+        <li class="flex align-center">
           <a href="/ontology/tags/onotology-tutorial/">Onotology Tutorial</a>
-          <span>2</span>
+          <span>1</span>
         </li>
       
       </ul>
