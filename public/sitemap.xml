@@ -2,28 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ontology/docs/fetch_abstracts_documentation_new/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ontology/categories/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ontology/docs/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
+    <loc>http://localhost:1313/ontology/docs/msi_extraction/</loc>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ontology/docs/fetch_abstracts_documentation/</loc>
     <lastmod>2025-12-31T00:00:00+09:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/ontology/categories/</loc>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ontology/docs/</loc>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/ontology/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ontology/tags/ontology-tutorial/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ontology/tags/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ontology/categories/technical/</loc>
-    <lastmod>2025-12-31T00:00:00+09:00</lastmod>
+    <lastmod>2026-01-07T07:28:57+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ontology/docs/what_is_ontology/</loc>
     <lastmod>2025-12-28T22:07:33+09:00</lastmod>
