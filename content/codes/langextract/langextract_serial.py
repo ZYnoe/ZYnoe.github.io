@@ -1,14 +1,16 @@
 import langextract as lx
 import textwrap
 import json
+import time
 
+start = time.perf_counter()
 # 1. Define the prompt and extraction rules
 prompt = textwrap.dedent("""\
     Extract materials science information from research abstracts.
-Focus on: material compositions with chemical formulas, synthesis methods, 
-characterization techniques with abbreviations, quantitative parameters with values and units, 
-performance improvements with before/after comparisons, and potential applications.
-Use exact text from the original. Provide detailed attributes for scientific context.""")
+    Focus on: material compositions with chemical formulas, synthesis methods, 
+    characterization techniques with abbreviations, quantitative parameters with values and units, 
+    performance improvements with before/after comparisons, and potential applications.
+    Use exact text from the original. Provide detailed attributes for scientific context.""")
 
 # 2. Provide a high-quality example to guide the model
 examples = [
@@ -88,7 +90,7 @@ with open('abstracts.json', 'r', encoding='utf-8') as f:
 # print(f"Loaded {len(abstracts)} abstracts.")
 # print("Processing the first 2 abstracts...")
 
-demo_abstracts = abstracts[:100]
+demo_abstracts = abstracts[:10]
 
 results = []
 for abstract in demo_abstracts:
@@ -101,7 +103,7 @@ for abstract in demo_abstracts:
         model_id="gemma3:12b",  # Automatically selects Ollama provider
         model_url="http://localhost:11434",
         fence_output=False,
-        max_workers=10,
+        max_workers=2,
         use_schema_constraints=False,
         max_char_buffer=1000
     )
@@ -118,3 +120,6 @@ with open("visualization.html", "w", encoding='utf-8') as f:
         f.write(html_content.data)  # For Jupyter/Colab
     else:
         f.write(html_content)
+
+end = time.perf_counter()
+print(f"Runtime: {end - start:.6f} seconds")
