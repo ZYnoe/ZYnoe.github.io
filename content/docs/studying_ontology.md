@@ -3,6 +3,7 @@ title: "What is ontology and semantic memory?"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
+# draft: true
 # bookHidden: false
 # bookCollapseSection: false
 # bookComments: false
