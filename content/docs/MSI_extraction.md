@@ -9,12 +9,17 @@ weight: 1
 # bookSearchExclude: false
 # bookHref: ''
 # bookIcon: ''
-date: "2026-01-07T07:28:57.217Z"
+date: "2026-02-11T04:49:53+00:00"
 draft: false
 tags:
-- Ontology Tutorial
+- Materials Science
+- Information Extraction
+- Data Extraction
+- Tutorial
+- Parallel Processing
 categories:
 - technical
+- tutorial
 ---
 
 # [langextract](https://github.com/google/langextract)
