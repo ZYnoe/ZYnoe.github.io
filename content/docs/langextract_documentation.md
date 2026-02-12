@@ -41,6 +41,14 @@ pixi install
 ```bash
 export OLLAMA_NUM_PARALLEL=num_worker
 ```
+```bash
+export OLLAMA_NUM_PARALLEL=65
+export OLLAMA_MAX_LOADED_MODELS=1 
+export OLLAMA_SCHED_SPREAD=1 
+export OLLAMA_KEEP_ALIVE=-1
+
+ollama serve
+```
 3. The `gemma3:12b` model pulled in Ollama.
 4. Input file `abstracts.json` present in the same folder.
 
